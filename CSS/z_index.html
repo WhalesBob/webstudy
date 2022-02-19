@@ -10,7 +10,41 @@
             div:nth-child(2){background-color: cyan; bottom: 50px;}
             div:nth-child(3){background-color: ivory; bottom: 100px;}
             div:nth-child(4){background-color: mediumslateblue; bottom: 150px;}
-        /* position : relative, bottom 정리하기!*/
+        /* position : relative, bottom 정리하기!
+        position : relative -> 이전 요소(주로 부모 요소) 에 자연스럽게 연결하여
+        위치를 지정하는 것. 여기서는 body 기준으로 맞춰질 것이다.
+        bottom 으로 50px 100px 150px만큼 밑으로 내려간다는 의미로 생각하면 될 것이다. 
+        어디 기준? 위의 부모 요소 기준! body이다.  */
+
+        /* nth-child()는 형제 요소 중에서 n번째만 적용하겠다 하는
+        의사 표시 요소임. 괄호 안에 숫자를 넣을 수도 있고, n을 이용한
+        수식을 집어넣어서 활용할 수도 있다.*/
+
+        /* 아직 z-index를 정의해 주지 않았으니, 먼저 생성된 요소가 나중에 생성된 요소 아래에
+        깔려 있는 것을 확인할 수 있다. 나중에 생성된 요소가 앞에 생성된 요소 위에 
+        쌓여 있는 것. 이것을 z축이라고 하는 것. z-index 속성을 사용하면 이 쌓여 있는 위치를
+        임의로 바꿔줄 수 있다. */
+        
+        /* For example : */
+        .first{
+            z-index: 1;
+        }
+        .second{
+            z-index: 5; /* 요렇게 되어 있으면 first가 second 위로 올라간다!*/
+        }
+        .third{
+            z-index: 10;
+        }
+        .fourth{
+            z-index : 20;
+        }
+        /* 무조건 아래 있는 요소보다 위에 있는 것의 z-index가 크기만 하면
+        그거에 맞게 위로 올라온다. 1/2/3/4 해도 되고, 위의 예시처럼
+        해줘도 쌓인다. */
+        /* 만약에 z-index 숫자가 같으면, 나중에 생성된 요소가 앞에 생성된 요소보다 
+        위로 쌓이게 된다.*/
+        /*z-index는 모든 요소에 똑같이 적용되는 것은 아니고, position이라는 속성이 적용되
+        어 있는 대로 그에 맞게 적용되는 것이다. 명심할것!*/
         </style>
     </head>
     <body>
