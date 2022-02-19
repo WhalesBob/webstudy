@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <title>상속 공부 HTML 문서</title>
+        <style>
+            div{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width : 300px; height: 300px;
+
+                color : tomato; 
+                font-size: 24px;
+                border : 3px dashed red;
+            }/* 
+            p{
+                color : teal; -> 상속은 자기에게 주어진 스타일이 없는
+                경우 사용하는 선택자로. 자기 자신을 콕 집어서 스타일을 지정해 주게되면
+                상속은 무의미하게 된다!
+            }*/
+        </style>
+        <!-- div 상위 태그에 tomato color를 적용해줬는데, 
+        하위 p 태그의 글자에도 color : tomato 가 적용되 있는
+        것을 확인할 수 있다.  -->
+        <!-- 반면 border에는 3px짜리 dashed red가 되어 있는데
+        얘는 p태그에 상속이 되지 않은 것을 확인할 수 있다.
+        border는 상속이 되지 않는 속성 중 하나이다.-->
+    </head>
+    <body>
+        <div>
+            <p>가운데 p 태그</p>
+        </div>
+    </body>
+</html>
