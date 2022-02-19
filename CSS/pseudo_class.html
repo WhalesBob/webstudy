@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang = "ko">
+    <head>
+        <meta charset="utf-8">
+        <title>의사 클래스 HTML 문서</title>
+        <!-- style
+             [type="button"]{
+                width : 100px; height : 30px;
+                background-color: tomato; color:white;
+                border : none; border-radius: 8px;
+
+            }
+            [type="button"]:hover{
+                background-color: gray;
+            }
+            [type="button"]:active{
+                background-color: black;
+
+            input:focus{ 
+                background-color: red;
+                color : white;
+            }
+            input:disabled{
+                height : 100px;
+            }
+            }-->
+        <style>
+            body{
+                display: flex;
+                justify-content: space-between;
+            }
+            .box{
+                width : 50px; height : 50px;
+                background-color: blue; color : white;
+            }
+            .box:nth-child(2n-1){
+                background-color: red;
+            }
+        </style>
+        <!-- hover는 단순히 커서를 갖다대어서 호버링 상태로
+        만들때임-->
+        <!-- active는 클릭하고 있는 상태일때 나타나는 것.-->
+        <!-- focus는 클릭했을 때 상태를 말하는 것임.-->
+        <!-- disabled는 input을 사용하지 못하게 하게끔 하는 속성-->
+        <!-- nth-child()는 형제 요소 중에서 n번째만 적용하겠다 하는
+        의사 표시 요소임. 괄호 안에 숫자를 넣을 수도 있고, n을 이용한
+        수식을 집어넣어서 활용할 수도 있다.-->
+    </head>
+    <body>
+        <!--
+            <input type = "button" value = "버튼">
+            <input type = "text" value="아무거나 쓰기">
+        -->
+        <div class = "box">1번</div>
+        <div class = "box">2번</div>
+        <div class = "box">3번</div>
+        <div class = "box">4번</div>
+        <div class = "box">5번</div>
+    </body>
+</html>
+<!-- 의사 클래스는 이것 말고도 다양한 방법이 있지만, 문서를
+참조하여 위와 같은 방법으로 활용할 수 있다. 
+컨텐츠 자체적인 내용 뿐 아니라 사용자와의 상호작용과 관련된 
+경우에도 스타일을 적용할 수 있어 유용하다!-->
