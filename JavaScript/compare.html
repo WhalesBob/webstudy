@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>비교연산자</title>
+    </head>
+    <body>
+        <script>
+            console.log(1==2); // false;
+            console.log(1==1); // true
+            console.log("one"=="two"); // false
+            console.log("one"=="one"); // true
+
+            // == 와 === 차이!
+            // == 은 값이 같으면 그냥 1 == '1' 을 true라고 하는 데 반면
+            // === 은 값도, 데이터 타입도 같아야 true를 반환하고 아니면
+            // false를 반환한다는 데 있다. 생활코딩에서는 === 사용을 강력하게 권한다
+            // 근데 나같아도 이러면 === 쓰겠다.
+
+            console.log(1=='1'); // true
+            console.log(1==='1'); // false
+
+            console.log(null == undefined); // true
+            console.log(null === undefined); // false
+            // undefined는 값이 없다는 의미의 데이터 타입이라고 한다.
+            // 하지만, null은 값이 없다는 것을 명시한 것이고, undefined는
+            // 값이 없는 상태 전체를 아우르는 것 같다.
+
+            console.log(true == 1); // true
+            console.log(true === 1);  // false(boolean 과 int는 데이터 타입이 다르지.)
+
+            console.log(true == '1'); // true
+            console.log(true === '1'); // false;
+            console.log(0 === -0); // true
+            console.log(NaN === NaN); // false
+
+            // 나머지는 다른 언어와 차이가 같다. 삼항연산자도 
+            // 안 나왓지만 나온 마당에 다른것도 다 같다고 생각하면 된다.
+        
+        </script>
+    </body>
+</html>
