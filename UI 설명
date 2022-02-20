@@ -1,0 +1,11 @@
+UI는 User Interface의 약자이다. 
+
+반면, API는 Application Programming Interface의 약자이다.
+
+공통적으로는 Interface라는 것이고, 차이점으로는 User vs Application Programming일 것이다.
+
+UI는, 유저가 행동을 통해서 프로그램을 제어하고, 반대로 화면에 출력되거나 스피커로 소리가 
+나거나 하는 등의 것으로 컴퓨터와 유저 사이 중간에 존재하면서 컴퓨터와 유저의 중개자의 
+역할을 하는 것을 보면서 User Interface, UI라고 한다. 시스템 입장에서 유저는 사용자이다. 
+시스템 입장에서는 사용자와의 접점이 되는 인터페이스를 User Interface, UI라고 부를 수 
+있을 것이다. 
