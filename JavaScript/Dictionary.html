@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Object, 객체!</title>
+    </head>
+    <body>
+        <!--드디어 객체가 등장해 주셨다.
+        과연 자바에서의 객체와 JS에서의 객체의 차이는?
+        역시 차이점을 중심으로 공부해 보자.-->
+
+        <!-- 응 그냥 딕셔너리야~ 천천히 공부해보면서 JS에서의 객체를 파악해보자.
+        딕셔너리가 객체면 다른것도 다 객체지 뭐,,,, Object에서의 그런 느낌은 아닌듯 하다.-->
+        <script>
+            //var grades = {"egoing": 10, "k8805": 6, "sorialgi":80};
+            // dictionary 는 중괄호로!
+
+            /*
+            var grades = {};
+            grades['egoing'] = 10;
+            grades["k8805"] = 6;
+            grades["sorialgi"] = 80; 
+
+            var grades = new Object();
+            grades["egoing"] = 10;
+            grades["k8805"] = 6;
+            grades["sorialgi"] = 80;
+            
+            //alert(grades["sorialgi"]);
+            alert(grades.egoing);
+
+            for(key in grades){ // js에서의 for loop의 새로운 부분!
+                document.write("key : " + key + " value : " + grades[key] + "</br>");
+            }*/
+            // grades.key는 하면 안되는가보다. 메서드 처럼 해주는걸로 가면 명확히 정의된게 아니라서 그런가
+
+            // 객체에는 객체를 담을수도, 함수를 담을수도 있다!
+
+            var grades = {
+                "list" : {"egoing" : 10, "k8805" : 6, "sorialgi" : 80},
+                "show" : function(){
+                    for(var name in this.list){
+                        document.write(name + ':' + this.list[name] + "</br>");
+                    }
+                }
+            }
+
+            grades.show();
+
+            // 애초에 지금 이거,,,, grades라는 객체를 하나 주고
+            // 멤버 변수, 메서드를 주는 식 아닌가?! 이런식으로도 
+            // 사용할 수 있다는 것을 확인할 수 있었다. 조금 더 
+            // 깊게 공부해 볼 필요가 있을 것이다. 
+
+        </script>
+    </body>
+</html>
