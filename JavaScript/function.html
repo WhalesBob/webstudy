@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>함수</title>
+    </head>
+    <body>
+        <script>
+            /*
+            짚고 넘어가야 할 점! 자바스크립트에서는
+            함수의 데이터 타입이 없다. 하지만, typeof 연산자를 통해서
+            데이터 타입을 확인할 수 있을 뿐이다. var 처럼 하나보다.
+            그렇다면 자바에서의 public 형이라던지, int, double 이런것들이
+            다 뭉떵그려지는지? 그런것들을 나중에 파악해야 한다. 
+            함수부터는 본격적으로 다른 언어들과의 차이점을 보면서 공부하자.
+            */
+
+            /*
+            function numbering(){
+                var i = 0;
+                while(i < 10){
+                    document.write(i);
+                    i++;
+                }
+            }
+
+            for(var i = 0; i < 5; i++){
+                numbering();
+                document.write("</br>");
+            }
+            
+            function get_member1(){
+                return "egoing";
+            }
+            function get_member2(){
+                return "k8805";
+            }
+
+            alert(get_member1());
+            alert(get_member2());*/
+
+            var numbering = function(){
+                i = 0;
+                while(i<10){
+                    document.write(i);
+                    i++;
+                }
+            }
+
+            numbering();
+        </script>
+    </body>
+</html>
