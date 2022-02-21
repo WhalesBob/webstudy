@@ -34,6 +34,18 @@
         <table>
             <caption>선물용과 가정용 상품 구성</caption> 
             <!-- caption 태그는 표의 제목이 된다. 제목은 표의 위쪽 중앙에 표시된다. -->
+            <colgroup> <!-- 열을 묶어주는 태그들이다. 특정 열에 배경색을 넣거나 너비를 바꾸려면
+            원하는 열을 선택할 수 있어야 한다. 이럴 때 사용하는 태그가 col, colgroup 태그이다. -->
+
+            <!-- colgroup, col 태그는 반드시 caption 태그 바로 뒤에 써야 함. 표의 내용이 시작되기 전에 
+            열의 상태를 알 수 있게! 그리고 col 태그를 사용할 때는 colgroup 태그 안에 col 태그를 포함해 전체 
+            열의 갯수만큼 col 태그를 넣어줘야 한다. (스타일이 없다 해도!) 그래야 각 col마다 스타일이 올바로 들어감.-->
+
+            <!-- 같은 스타일 속성을 사용하는 col 태그가 있다면 span 속성을 사용해 묶어줄 수 있다. -->
+                <col style="background-color:#eee">
+                <col>
+                <col span="2" style="width:150px">
+            </colgroup>
             <thead> <!-- 이렇게 thead, tbody, tfoot 구별해놓으면 나중에 CSS를 통해 관리하기 용이해진다. -->
 
                 <tr> <!-- tr 태그는 행, td태그는 열, th 태그는 제목 행에 셀을 만들때 사용하고, 셀 안에서 진하게 표시되어
