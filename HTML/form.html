@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
+        <title>Form 요소</title>
     </head>
     <!-- 웹을 사용하다 보면 form을 자주 만난다. 하나의 웹 페이지 안에도 여러 가지 폼을 사용한다.
     아이디와 비밀번호를 입력하거나 로그인 버튼, 회원 가입 등 사용자가 웹 사이트로 정보를 보낼
@@ -64,7 +64,13 @@
         <!-- 1. 태그 안에 폼 요소를 넣는 것.-->
         <label>아이디(6자 이상) <input type="text"></label>
 
+        <!--2. label 래트과 폼 요소를 따로 사용하고 <label>태그의 for 속성과 폼 요소의 id 속성을 이요해 서로 연결하는 것. -->
         <label for="user-id">아이디(6자 이상)</label>
         <input type="text" id="user-id">
+
+        <!-- 2번째 방법이 1번째 방법보다 복잡해 보이지만, label 태그를 사용한 테이블과 사용자 정보를 입력받는 input 태그가
+        떨어져 있더라도, 둘 사이를 쉽게 연결할 수 있다는 장점이 있다!-->
+
+        
     </body>
 </html>
