@@ -53,5 +53,18 @@
                 <legend>배송 정보</legend>
             </fieldset>
         </form>
+
+        <!-- 폼 요소에 라벨을 붙이는 <label> 태그-->
+        <!-- <label> 태그는 <input> 태그와 같은 폼 요소에 라벨을 붙일 때 사용한다. 여기서 라벨은, 입력란 가까이에 아이디나 
+        비밀번호처럼 붙여 놓은 텍스트를 말한다. label 태그를 이용하면 폼 요소와 라벨 텍스트가 서로 연결되었다는 것을 웹 브라우저가
+        알 수 있다.-->
+
+        <!-- label 태그는 두 가지 방법으로 사용할 수 있다.-->
+
+        <!-- 1. 태그 안에 폼 요소를 넣는 것.-->
+        <label>아이디(6자 이상) <input type="text"></label>
+
+        <label for="user-id">아이디(6자 이상)</label>
+        <input type="text" id="user-id">
     </body>
 </html>
