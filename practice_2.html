@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>실습_표 만들기</title>
+        <style>
+            table{
+                width : 70%;
+                height : 20%;
+                border : 1px solid black;
+                /* border-collapse: collapse; /*이거 없으면 칸 하나하나 다 따로 나뉘어서 보기 싫어진다. */
+            }
+            th,td{
+                width : 10%;
+                border : 1px solid black;
+            }
+            .blank{
+                width : 30%;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>수습 국원 지원 양식</h1>
+        <table>
+            <tr>
+                <th rowspan="3">개인정보</th>
+                <th>이름</th>
+                <td class="blank"></td>
+            </tr>
+            <tr>
+                <th>학과/학번</th>
+                <td class="blank"></td>
+            </tr>
+            <tr>
+                <th>연락처</th>
+                <td class="blank"></td>
+            </tr>
+            <tr>
+                <th>지원 분야</th>
+                <td colspan="2"></td>
+            </tr>
+        </table>
+    </body>
+</html>
