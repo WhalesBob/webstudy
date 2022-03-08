@@ -1,0 +1,16 @@
+/* 
+html, body를 두 개 다 설정해 주고, height를 100%로 설정해 주고, display : flex로 맞춰 준다
+이후 text-align : center 해주면 가로정렬은 가능하다. margin : auto 0도 필요하다. 
+
+나중에 중앙정렬 할일있으면 써먹자! 
+ex) MeungzziFanPage 에서의 middle_align 방법을 보자.
+*/
+
+html,body{
+    height : 100%;
+    display : flex;
+}
+#main{
+    text-align : center;
+    margin : auto 0;
+}
